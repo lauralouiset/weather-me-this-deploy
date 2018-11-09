@@ -1,5 +1,5 @@
 #WEATHER ME THIS!
-(HEROKU LINK)
+https://weather-me-this.herokuapp.com/
 https://lauraloui.se
 
 Weather Me This! is a weather forecasting app built by Laura-Louise Tobin as a project to learn Node.js!
@@ -7,7 +7,7 @@ Weather Me This! is a weather forecasting app built by Laura-Louise Tobin as a p
 
 Weather Me This! is powered by Google Places Autocomplete API, Google Maps Geocoding API, with weather information from the Dark Sky weather forecast API (https://darksky.net/poweredby/).
 
-This app is deployed via Heroku and can be seen here(LINK GOES HERE!!)
+This app is deployed via Heroku and can be seen live at https://weather-me-this.herokuapp.com/
 
 #How It Works
 
