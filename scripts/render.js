@@ -12,7 +12,7 @@ function mergeValues(values, content){
 
 function view(templateName, values, response){
 	// read from the template files
-	let fileContents = fs.readFileSync(`./public/views/${templateName}.html`, { 'encoding': "utf8" } );
+	let fileContents = fs.readFileSync(`./views/${templateName}.html`, { 'encoding': "utf8" } );
 	// insert values into the content
 		fileContents = mergeValues(values, fileContents);
 		// write out to the response
