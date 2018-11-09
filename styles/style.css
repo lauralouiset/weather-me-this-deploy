@@ -1,0 +1,1023 @@
+/* =========================================
+WEATHER ME THIS STYLES
+============================================ */
+/* =========================================
+SETUP STYLES - Normalize & Border-Box
+============================================ */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* =========================================
+VARIABLES AND MIXINS
+============================================ */
+/* ------------  VARIABLES  ------------ */
+/* ------------  MIXINS  ------------ */
+/* ------------  Mixin for responsive Media Queries ------------ */
+/* =========================================
+TYPOGRAPHY STYLES
+============================================ */
+h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 900;
+  font-size: 8.3rem;
+  text-shadow: 0px 0px 10px #292121, 0px 0px 15px lightgrey;
+  margin-top: 15vh;
+}
+h1 span {
+  letter-spacing: -0.2rem;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-family: "Sofia", cursive;
+  font-size: 3.8rem;
+  margin: 7px 0;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+  margin: 3px;
+  font-family: "Prompt", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+header span span {
+  font-size: 2.6rem;
+}
+
+header, footer {
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Prompt", sans-serif;
+}
+header p, header span, header button, header a, footer p, footer span, footer button, footer a {
+  font-size: 2.3rem;
+}
+
+.cursive {
+  font-family: "Sofia", cursive;
+  text-transform: lowercase;
+}
+
+.signature a {
+  font-family: "Cookie", cursive;
+  font-size: 3rem;
+}
+
+/* ------------  FORECAST TYPOGRAPHY STYLES  ------------ */
+.weather_heading {
+  text-shadow: 0px 0px 10px #292121, 0px 0px 15px lightgrey;
+}
+
+.forecast_location {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.back_button_text {
+  font-size: 2.2rem;
+  font-family: "Prompt", sans-serif;
+}
+
+/* ------------  TODAY  ------------ */
+.forecast_today_date,
+.forecast_today_time {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.forecast_today_date {
+  text-align: left;
+}
+
+.forecast_today_time {
+  text-align: right;
+}
+
+.today_temp {
+  font-size: 6.5rem;
+}
+
+.today_high-low {
+  font-size: 1.8rem;
+}
+
+/* ------------  WEEKLY  ------------ */
+.main_forecast {
+  text-align: center;
+}
+
+.weekly_day {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.weekly_temp {
+  font-size: 2rem;
+}
+
+/* =========================================
+MAIN STYLES
+============================================ */
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: #6a76f6;
+}
+
+header .header_title a:hover {
+  color: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #67606F;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #15111d, #E7CFC4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #15111d, #E7CFC4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url("../assets/wmt-splash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.blur {
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  filter: blur(8px);
+}
+
+/* =========================================
+HEADER & FOOTER STYLES
+============================================ */
+header, footer {
+  margin: 0;
+  width: 100%;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  height: 55px;
+}
+
+.contains_cursive span {
+  position: relative;
+  top: 0;
+  transition: all 0.2s ease-in;
+}
+.contains_cursive:hover {
+  color: white;
+}
+.contains_cursive:hover span {
+  top: -3px;
+  color: #969efc;
+}
+
+/* ------------  HEADER TYLES  ------------ */
+header {
+  justify-content: space-between;
+  padding: 10px 10%;
+  background-color: rgba(20, 3, 48, 0.56);
+}
+
+.nav_wrapper {
+  display: flex;
+}
+
+button#about_button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  transition: color 0.2s ease-in;
+}
+button#about_button:hover {
+  color: #969efc;
+}
+
+.search_icon {
+  width: 25px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.search_icon:hover {
+  color: #969efc;
+}
+
+/* ------------  FOOTER STYLES  ------------ */
+footer {
+  padding: 5px 10%;
+}
+footer p {
+  margin-right: auto;
+}
+footer p:hover {
+  cursor: pointer;
+}
+
+.footer_nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+.footer_nav li {
+  padding: 0 12px;
+}
+
+.link_icon {
+  width: 30px;
+  position: relative;
+  top: 0;
+  transition: top 0.2s ease-in;
+}
+.link_icon:hover {
+  top: -5px;
+}
+
+/* ------------  RESPONSIVE STYLES  ------------ */
+@media (max-width: 400px) {
+  header {
+    padding: 10px 5%;
+  }
+}
+@media (max-width: 350px) {
+  header {
+    flex-direction: column;
+    padding: 10px 10% 15px;
+    height: 85px;
+  }
+}
+@media (max-width: 550px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+    padding: 10px;
+  }
+  footer p {
+    display: none;
+  }
+  footer .footer_nav {
+    padding-inline-start: 0px;
+  }
+  footer .footer_nav li {
+    margin: 0 2vh;
+  }
+  footer .link_icon {
+    width: 35px;
+  }
+}
+/* =========================================
+ABOUT MODAL STYLES
+============================================ */
+#about {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  top: 40px;
+  line-height: 1.6;
+  padding: 30px 50px;
+  background-color: rgba(35, 52, 76, 0.95);
+  background: linear-gradient(to bottom, #3b3b59, rgba(43, 47, 53, 0.95));
+  color: white;
+  box-shadow: 0 0 20px aliceblue;
+  border-radius: 10px;
+}
+#about a {
+  text-decoration: underline;
+}
+#about h3 {
+  margin-bottom: 10px;
+}
+
+#close_button {
+  width: 35px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+/* ------------  RESPONSIVE STYLES  ------------ */
+@media (max-width: 900px) {
+  .about_hide {
+    display: none;
+  }
+}
+@media (max-width: 405px) {
+  .about_hide_sm {
+    display: none;
+  }
+}
+/* =========================================
+SEARCH PAGE STYLES
+============================================ */
+.searchWrapper {
+  height: calc(100vh - 110px);
+  min-height: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+form {
+  margin: 0 auto;
+  display: inline-block;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 80%;
+  display: flex;
+}
+form input, form button {
+  height: 40px;
+  border-radius: 3px;
+  margin: 5px;
+  border: none;
+  padding: 8px;
+  color: #272727;
+  background-color: white;
+  font-family: "PT Sans Caption", sans-serif;
+  box-shadow: 0px 0px 10px #938d8d, 0px 0px 15px lightgrey;
+}
+form input[type=text] {
+  flex-grow: 1;
+}
+form input[type=text]:focus {
+  outline: 3px solid rgba(35, 52, 76, 0.95);
+  outline-offset: 2px;
+}
+form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #272727;
+  opacity: 0.8;
+  /* Firefox */
+}
+form :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #272727;
+}
+form ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #272727;
+}
+
+.search_button {
+  width: 125px;
+  margin: 5px 10px;
+}
+.search_button:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.temperature {
+  display: flex;
+  min-width: 105px;
+}
+.temperature label {
+  padding: 7px 9px;
+  border-radius: 3px;
+  background-color: white;
+  margin: 5px 5px;
+  height: 40px;
+  min-width: 40px;
+  font-family: "PT Sans Caption", sans-serif;
+  box-shadow: 0px 0px 10px #938d8d, 0px 0px 15px lightgrey;
+}
+.temperature input[type=radio] {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  position: absolute;
+}
+
+input[type=radio] + label {
+  background-color: white;
+  font-size: 2.1rem;
+}
+
+input[type=radio]:checked + label {
+  color: white;
+  background-color: #6a76f6;
+}
+
+input[type=radio]:focus + label {
+  border: 3px solid rgba(35, 52, 76, 0.95);
+  border-radius: 3px;
+}
+
+/* ------------  RESPONSIVE STYLES  ------------ */
+@media (max-width: 900px) {
+  form {
+    flex-wrap: wrap;
+  }
+  form input[type=text] {
+    width: 100%;
+  }
+  form .search_button {
+    flex-grow: 1;
+    margin: 10px 10px 10px 5px;
+  }
+  form .temperature label {
+    margin: 10px 5px;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    margin-top: 8rem;
+    font-size: 7rem;
+  }
+}
+@media (max-width: 670px) {
+  h1 {
+    font-size: 6rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 510px) {
+  h1 {
+    margin-bottom: 3rem;
+  }
+
+  form {
+    width: 95%;
+  }
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  form {
+    width: 95%;
+  }
+}
+@media (max-width: 350px) {
+  h1 {
+    font-size: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
+/* =========================================
+FORECAST SECTION STYLES
+============================================ */
+.forecast {
+  position: relative;
+}
+
+.back_button {
+  position: absolute;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back_button_container {
+  color: white;
+  width: 20px;
+}
+
+.back_button_text {
+  margin-left: 5px;
+}
+
+.main_forecast {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.today,
+.today_more-info,
+.weekly_item {
+  background-color: rgba(250, 250, 250, 0.8);
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px #938d8d, 0px 0px 15px lightgrey;
+}
+
+/* ------------  TODAY  ------------ */
+.today {
+  margin: 10px;
+  width: 40%;
+  padding: 35px 35px 25px 35px;
+}
+
+.today_forecast_wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.today_details_container {
+  order: -1;
+}
+
+.today_more-info {
+  margin: 10px;
+  width: 27%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 225px;
+  position: relative;
+  top: 30px;
+}
+
+.today_details {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 2px;
+}
+
+.today_apparent-temp {
+  margin: 8px 0px;
+}
+
+.today_temp {
+  margin: 0 0 0 25px;
+}
+
+.today_high-low {
+  margin: 0;
+}
+
+.today_date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.today_icon {
+  width: 40%;
+}
+
+.today_desc {
+  margin: 2px;
+  line-height: 1.6;
+}
+
+/* ------------  WEEKLY  ------------ */
+.weekly_items {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 20px 0px 20px;
+  margin-bottom: 30px;
+}
+
+.weekly_item {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 17%;
+  top: 0;
+  transition: all 0.3s ease-in;
+}
+.weekly_item:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  top: -5px;
+}
+
+.weekly_icon {
+  width: 40%;
+  margin: 15px auto;
+}
+
+.weekly_day {
+  margin: 7px 7px 0px 7px;
+}
+
+.weekly_date {
+  margin: 0px 7px 7px 7px;
+}
+
+.weekly_temp {
+  margin: 10px;
+}
+
+/* ------------  WEEKLY MODAL STYLES  ------------ */
+.weekly_modal {
+  background-color: rgba(35, 52, 76, 0.95);
+  color: white;
+  padding: 30px;
+  z-index: 10;
+  position: absolute;
+  left: -35px;
+  top: -210px;
+  width: 300px;
+  border-radius: 7px;
+}
+.weekly_modal:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  /* value = - border-top-width - border-bottom-width */
+  left: 50px;
+  border-width: 15px 15px 0;
+  /* vary these values to change the angle of the vertex */
+  border-style: solid;
+  border-color: rgba(35, 52, 76, 0.95) transparent;
+  display: block;
+  width: 0;
+}
+
+.modal_close_button {
+  position: absolute;
+  color: white;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+}
+
+.weekly_modal_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weekly_modal_forecast {
+  width: 60%;
+}
+.weekly_modal_forecast p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.weekly_modal_desc p {
+  margin-bottom: 0;
+}
+
+.weekly_modal_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  color: white;
+}
+
+/* ------------  RESPONSIVE STYLES  ------------ */
+@media (max-width: 1000px) {
+  .today_temp {
+    font-size: 5.5rem;
+  }
+
+  .today_more-info {
+    width: 30%;
+  }
+
+  .today_date {
+    flex-direction: column;
+  }
+  .today_date h4 {
+    margin: 0px;
+  }
+  .today_date .forecast_today_date,
+.today_date .forecast_today_time {
+    text-align: left;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .back_button {
+    left: 45px;
+  }
+
+  .today {
+    padding: 20px 20px 5px 20px;
+  }
+
+  .today_more-info {
+    width: 30%;
+  }
+}
+@media (max-width: 750px) {
+  .main_forecast {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .today {
+    width: 93%;
+    min-height: 91%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .today_more-info {
+    top: 0px;
+    width: 93%;
+    min-height: 100px;
+    padding: 20px;
+  }
+
+  .forecast_location {
+    text-align: center;
+  }
+
+  .today_details_container {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .weekly_desc {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .today_forecast_wrapper {
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 640px) {
+  .weekly_items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weekly_item {
+    padding-left: 15%;
+    width: 80%;
+  }
+  .weekly_item:hover {
+    top: 0;
+  }
+
+  .weekly_icon {
+    width: 15%;
+    position: absolute;
+    top: 18%;
+    right: 25%;
+  }
+
+  .weekly_item p {
+    text-align: left;
+  }
+}
+@media (max-width: 500px) {
+  .main_forecast {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .today {
+    width: 93%;
+  }
+
+  .today_details_container {
+    order: 0;
+  }
+
+  .today_forecast_wrapper {
+    flex-direction: row;
+  }
+
+  .today_date {
+    flex-direction: row;
+  }
+
+  .today_icon {
+    width: 25%;
+  }
+
+  .today_desc {
+    margin-bottom: 5px;
+  }
+}
+/* =========================================
+ERROR POPUP STYLES
+============================================ */
+.error {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(35, 52, 76, 0.95);
+  text-align: center;
+  padding: 13px;
+  color: white;
+}
+.error p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
