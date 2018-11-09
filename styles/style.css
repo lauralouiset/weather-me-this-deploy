@@ -642,6 +642,7 @@ input[type=radio]:focus + label {
 @media (max-width: 510px) {
   h1 {
     margin-bottom: 3rem;
+    line-height: 1.2;
   }
 
   form {
