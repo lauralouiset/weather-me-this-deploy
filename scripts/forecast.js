@@ -116,26 +116,6 @@ module.exports = class Forecast extends EventEmitter {
 	getDateAndTime() {
 
 		const date = new Date();
-		
-				// Live version updates time local to Heroku servers. This code removed from live project*
-		// let hours = date.getHours();
-		// const mins = ('0' + date.getMinutes()).slice(-2); //always gives back two digits
-		// let AMPM;
-
-		// // outputs time in 12 hour clock, sets AM or PM
-		// if (hours === 12) {
-		// 	AMPM = "PM"
-		// } else if (hours > 12) {
-		// 	hours = (hours - 12);
-		// 	AMPM = "PM";
-		// } else if (hours === 0) {
-		// 	hours = 12;
-		// 	AMPM = "AM"
-		// } else {
-		// 	AMPM = "AM";
-		// }
-		// // Sets today's time
-		// this.weather.set('currentTime', `${hours}:${mins} ${AMPM}`);
 
 		// sets today's date
 		this.weather.set('currentDate', date.toDateString().toUpperCase());
