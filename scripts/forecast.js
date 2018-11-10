@@ -126,6 +126,9 @@ module.exports = class Forecast extends EventEmitter {
 		} else if (hours > 12) {
 			hours = (hours - 12);
 			AMPM = "PM";
+		} else if (hours === 0) {
+			hours = 12;
+			AMPM = "AM"
 		} else {
 			AMPM = "AM";
 		}
