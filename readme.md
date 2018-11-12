@@ -18,5 +18,5 @@ When a search is made, a POST request is sent to the server, which redirects to 
 Additional tools used in this project include jQuery (for front-end functionality), Axios (for API info retrieval), Babel, Sass, and CSS Grid.
 			
 
-Weather icons c/o <a href="https://www.flaticon.com/packs/weather-151">FlatIcon</a>. Link svg icons c/o <a href="https://fontawesome.com/license">FontAwesome</a>.>
-s
+Weather icons c/o <a href="https://www.flaticon.com/packs/weather-151">FlatIcon</a>. Link svg icons c/o <a href="https://fontawesome.com/license">FontAwesome</a>.
+
