@@ -1,4 +1,5 @@
 #WEATHER ME THIS!
+* this is the deployed version of Weather Me This, used to push to heroku from Github. For the development files, please see my "weather-me-this" repo *
 https://weather-me-this.herokuapp.com/
 https://lauraloui.se
 
