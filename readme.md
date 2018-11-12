@@ -1,7 +1,5 @@
 #WEATHER ME THIS!
 * this is the deployed version of Weather Me This, used to push to heroku from Github. For the development files, please see my "weather-me-this" repo *
-https://weather-me-this.herokuapp.com/
-https://lauraloui.se
 
 Weather Me This! is a weather forecasting app built by Laura-Louise Tobin as a project to learn Node.js!
 
